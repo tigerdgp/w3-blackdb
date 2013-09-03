@@ -43,8 +43,6 @@
 	            nome varchar(100) not null,
 	            link varchar(255) not null,
 	            pai INT null,
-	            filho INT null,
-                ativo INT not null,
 	            PRIMARY KEY(id))") 
             Or die(mysql_error());
 
