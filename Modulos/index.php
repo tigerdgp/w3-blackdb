@@ -1,20 +1,16 @@
 <div class="g_inews">
     <div class="bloco">
+        <ul>
+            <?php
 
-    sad<br />
-    <?php
-
-            $menu_sql = "SELECT * FROM " . $prefixo_db . "menu WHERE ativo = 1";
-            $menu_query = mysql_query($menu_sql);
+                $sql = "SELECT * FROM " . $prefixo_db . "noticia WHERE ativa = 1";
+                $query = mysql_query($sql);
             
-            echo $menu_sql;
+                while ($news = mysql_fetch_assoc($query)) {
+                        echo "<li><span>" . $news['titulo'] . "</span></li>";
+                }            
 
-            while ($menu = mysql_fetch_assoc($menu_query)) {
-                //if ($menu['pai'] == 1) {
-                    echo "<li><span>" . $menu['nome'] . "</span></li>";
-                //}
-            }            
-
-        ?>
+            ?>
+        </ul>
     </div>
 </div>
