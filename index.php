@@ -2,6 +2,7 @@
     
     include '/Classes/configuracao.php';
     include '/Classes/modulos.php';
+    include '/Classes/menu.php';
 
 ?>
 
