@@ -49,14 +49,12 @@ header {
 }
 
 footer {
-    background: transparent url('../img/footer.png') no-repeat center 0 !important;
+    /*background: transparent url('../img/footer1.png') no-repeat center 0 !important;*/
     width: 100%;
     height: 48px;  
-    clear: both;
-    bottom: 0px;
+    clear: both;    
     padding-top: 150px;
     position: absolute;
-    bottom: 0;
     z-index: 0;
 }
     footer p {
@@ -109,6 +107,7 @@ footer {
     background: transparent url('../img/bg_news.png') no-repeat center 0 !important;
     width: 600px;
     height: 245px;  
+    min-height: 245px;
     padding-bottom: 48px;    
     position: relative;
     margin: 0 auto;
@@ -122,11 +121,15 @@ footer {
 nav {
     position: relative;
     margin: 0 0 50px 0;
-    width: 800px;
+    width: 100%;
+    text-align: center;
 }
 
 ul#g_menu {
     cursor: pointer;
+    text-align: left;
+    margin: 0 auto;
+    position: relative;
 }
 
 ul#g_menu img {
@@ -243,3 +246,12 @@ ul#g_menu span {
     ul#g_menu li.last {
         border-right: 0 none;
     }
+
+
+/* Campos search, input, submit */
+.search {
+    width: 400px;
+    margin-bottom: 10px;
+    position: relative;
+    padding: 8px 5px 8px 5px;    
+}
